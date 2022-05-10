@@ -2,7 +2,7 @@ import ScrollSuave from "./modules/scrollSuave.js";
 import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabNav.js";
 import Modal from "./modules/modal.js";
-import initTooltip from "./modules/tooltip.js";
+import Tooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/menuDropdown.js";
 import initMenuMobile from "./modules/menuMobile.js";
 import initOperation from "./modules/funcionamento.js";
@@ -34,7 +34,8 @@ const modal = new Modal(
 modal.init();
 
 // Tooltip para informações com movimento do mouse.
-initTooltip();
+const tooltip = new Tooltip("[data-tooltip]");
+tooltip.init();
 
 // Dropdown para menus
 initDropdownMenu();
