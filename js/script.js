@@ -1,7 +1,7 @@
 import ScrollSuave from "./modules/scrollSuave.js";
 import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabNav.js";
-import initModal from "./modules/modal.js";
+import Modal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/menuDropdown.js";
 import initMenuMobile from "./modules/menuMobile.js";
@@ -26,7 +26,12 @@ const tabNav = new TabNav(
 tabNav.init();
 
 // Modal Login
-initModal();
+const modal = new Modal(
+  '[data-modal="open"]',
+  '[data-modal="close"]',
+  '[data-modal="container"]'
+);
+modal.init();
 
 // Tooltip para informações com movimento do mouse.
 initTooltip();
