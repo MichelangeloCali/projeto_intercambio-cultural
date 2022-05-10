@@ -1,5 +1,5 @@
 // API Fetch números viagens utilizando Async
-import initAnimationNumbers from "./animaNumeros.js";
+import AnimationNumbers from "./animaNumeros.js";
 
 export default function initFetchNumbers() {
   function createViagem(viagem) {
@@ -19,7 +19,12 @@ export default function initFetchNumbers() {
         const divLugar = createViagem(viagem);
         numerosGrid.appendChild(divLugar);
       });
-      initAnimationNumbers();
+      const animaNumeros = new AnimationNumbers(
+        "[data-numero]",
+        ".numeros",
+        "ativo"
+      );
+      animaNumeros.init();
     } catch (erro) {
       console.log(erro);
     }
