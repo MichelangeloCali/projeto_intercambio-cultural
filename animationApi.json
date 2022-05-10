@@ -1,0 +1,26 @@
+[
+  {
+    "viagem": "Madrid",
+    "total": 4875
+  },
+  {
+    "viagem": "New York",
+    "total": 5374
+  },
+  {
+    "viagem": "Roma",
+    "total": 8120
+  },
+  {
+    "viagem": "Praga",
+    "total": 122
+  },
+  {
+    "viagem": "Dublin",
+    "total": 3144
+  },
+  {
+    "viagem": "Paris",
+    "total": 7989
+  }
+]

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Animais Fantásticos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+  <!-- script para usuários que não possuem JS habilitados em seu navegador  -->
+  <script>document.documentElement.className += ' js';</script>
+</head>
+
+<body>
+  <div class="grid-container">
+    <nav class="menu" data-menu="suave">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
+        <li><a href="#viagens">Viagens</a></li>
+        <li data-dropdown><a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">A Empresa</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="socios.html">Sócios</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a data-modal="open" href="login.html">Login →</a></li>
+      </ul>
+    </nav>
+
+    <section class="grid-section viagens" id="viagens" data-anime="scroll">
+      <h1 class="titulo">Intercâmbio Cultural</h1>
+      <ul class="viagens-lista" data-tab="menu">
+        <li>
+          <img src="./assets/img/imagem1.jpg ">
+        </li>
+        <li>
+          <img src="./assets/img/imagem2.jpg">
+        </li>
+        <li>
+          <img src="./assets/img/imagem3.jpg">
+        </li>
+        <li>
+          <img src="./assets/img/imagem4.jpg">
+        </li>
+        <li>
+          <img src="./assets/img/imagem5.jpg">
+        </li>
+        <li>
+          <img src="./assets/img/imagem6.jpg">
+        </li>
+      </ul>
+      <div class="viagens-descricao" data-tab="content">
+        <section data-anime="show-right">
+          <h2>New York</h2>
+          <p>A cidade de Nova York compreende 5 distritos situados no encontro do rio Hudson com o Oceano Atlântico. </p>
+          <p>No centro da cidade fica Manhattan, um distrito com alta densidade demográfica que está entre os principais centros comerciais, financeiros e culturais do mundo.</p>
+          <p>Entre seus pontos emblemáticos, destacam-se arranha-céus, como o Empire State Building, e o enorme Central Park.</p>
+          <p>O teatro da Broadway fica em meio às luzes de neon da Times Square.</p>
+        </section>
+
+        <section data-anime="show-right">
+          <h2>Paris</h2>
+          <p>Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena.</p>
+          <p> A cidade é conhecida por monumentos como a Torre Eiffel e a Catedral de Notre-Dame, uma construção gótica do século XII, sendo famosa também pela cultura dos cafés e por lojas de estilistas famosos na Rue du Faubourg Saint-Honoré</p>
+          <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do
+            qual a raposa vermelha é a mais comum.</p>
+          <p> Do ponto de vista turístico, Paris é uma das cidades mais visitadas da Europa. Com o nosso guia de Paris você poderá descobrir todos os segredos da cidade, além de conseguir os melhores conselhos para viajar a Paris economizando.</p>
+        </section>
+
+        <section data-anime="show-down">
+          <h2>Roma</h2>
+          <p>Roma, a capital da Itália, é uma cidade cosmopolita, enorme, com quase 3.000 anos de arte, arquitetura e cultura influentes no mundo todo e à mostra.</p>
+          <p>Ruínas antigas como o Fórum e o Coliseu evocam o poder do antigo Império Romano. </p>
+          <p>A Cidade do Vaticano, sede da Igreja Católica Romana, tem a Basílica de São Pedro e os museus do Vaticano, que abrigam obras-primas como os afrescos da Capela Sistina de Michelangelo.</p>
+          <p>Você jamais, jamais passará fome em Roma. Por mais miserável que seja seu orçamento, não há como não achar um bom restaurante que ofereça um menu a bom preço.</p>
+        </section>
+
+        <section data-anime="show-down">
+          <h2>Dublin</h2>
+          <p>Dublin, capital da República da Irlanda, fica na costa leste do país, na foz do Rio Liffey. Entre seus prédios históricos destacam-se o Castelo de Dublin, que data do século 13, e a imponente Catedral de St Patrick, fundada em 1191.</p>
+          <p>Apesar de estar entre as menores capitais da Europa, Dublin, na Irlanda, pode ser considerado um verdadeiro refúgio para brasileiros que decidem passar um tempo no Velho Continente.</p>
+          <p>A capital irlandesa também é muito conhecida pelos seus pubs que agitam as noites na cidade. Se você está planejando uma viagem por essa região, confira nossas dicas de pontos turísticos para conhecer em Dublin./p>
+        </section>
+
+        <section data-anime="show-right">
+          <h2>Madrid</h2>
+          <p>Madrid, a capital da Espanha, situada no centro do país, é uma cidade de avenidas elegantes e parques grandes e bem cuidados, como o Buen Retiro. </p>
+          <p>Ela é famosa pelos ricos acervos de arte europeia, entre os quais estão as obras de Goya, Velázquez e outros mestres espanhóis no Museu do Prado. </p>
+          <p>Madrid é um cidade cosmopolita que tem de tudo: de construções históricas a lojas de luxo, passando por mercados, festivais, galerias, restaurantes… não faltam opções de lugares para visitar em Madrid</p>
+        </section>
+
+        <section data-anime="show-right">
+          <h2>Praga</h2>
+          <p>Praga, a capital da República Tcheca, é dividida pelo rio Moldava. Apelidada de "a cidade dos cem pináculos", ela é conhecida pela Praça da Cidade Antiga, no coração do seu centro histórico, com construções barrocas coloridas, igrejas góticas e o Relógio Astronômico medieval, que faz uma apresentação animada de hora em hora.</p>
+          <p>Do ponto de vista climático, o verão é a melhor época para visitar Praga. Nesta época, o sol brilha na maior parte do tempo, convertendo os parques e beer gardens (cervejarias com mesas no jardim) da cidade em uma festa ao ar livre.</p>
+          <p>Se você pretende conhecer o velho continente ou mesmo fazer um mochilão pela Europa, a cidade de Praga é obrigatória. Por isso, aqui vamos te ajudar a escolher o que fazer em Praga em um roteiro de 1 até 5 dias.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="grid-section faq" id="faq" data-anime="scroll">
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista" data-anime="accordion">
+        <dt>O intercâmbio pode ser personalizado?</dt>
+        <dd>Vamos te ajudar a desenhar toda estratégia para ampliar sua experiência em seu intercâmbio.Todas as atividades que você deseja realizar, você escolhe e nós planejamos, tudo para que você tenha sempre a melhor experiência de viagem combinada com aprendizado!</dd>
+        <dt>Teremos suporte durante nosso intercâmbio?</dt>
+        <dd>Claro! Nossos clientes terão todo o conforto, comodidade e segurança, por isso temos o melhor suporte para nossos intercambistas.</dd>
+        <dt>Vocês ajudarão na escolha da residência?</dt>
+        <dd>Sim! Não é maravilhoso? Nossos clientes não precisam se preocupar quanto às burocracias de residências, visto e melhores trajetos no dia a dia. O pacote inclui absolutamente tudo.</dd>
+        <dt>Posso parcelar em até quantas vezes? Há desconto à vista?</dt>
+        <dd>Você pode parcelar em até 12x em seu cartão. Caso opte pelo pagamento à vista, poderá ter descontos de até 5% no valor do pacote.</dd>
+      </dl>
+    </section>
+
+    <section class="grid-section numeros" data-anime="scroll">
+      <h1 class="titulo">Números</h1>
+      <div class="numeros-grid">
+
+      </div>
+    </section>
+
+    <section class="grid-section contato" id="contato" data-anime="scroll">
+      <h1 class="titulo">Contato</h1>
+      <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento">
+        <img src="./assets/img/mapa.png">
+      </div>
+      <ul class="dados">
+        <li>contato@intercambio.com</li>
+        <li>+55 (41) 9999-9999</li>
+        <li>Rua das Araucárias, nº 41</li>
+        <li>Curitiba - PR</li>
+        <li>Ajude-nos, doe <span class="btc-preco">0</span> Bitcoin</li>
+        <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8h às 18h</li>
+      </ul>
+    </section>
+
+    <footer class="copy">
+      <p>Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button class="close" data-modal="close">X</button>
+      <form action="">
+        <label for="email">E-mail</label>
+        <input type="text" for="email" id="email">
+        <label for="password">Senha</label>
+        <input type="password" for="password" id="password">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="./main.js/main.js"></script>
+</body>
+
+</html>
