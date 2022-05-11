@@ -3,10 +3,10 @@ import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabNav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
+import fetchNumbers from "./modules/animationApi.js";
 import initDropdownMenu from "./modules/menuDropdown.js";
 import initMenuMobile from "./modules/menuMobile.js";
 import initOperation from "./modules/funcionamento.js";
-import initFetchNumbers from "./modules/animationApi.js";
 import initFetchBitcoin from "./modules/bitcoinApi.js";
 import initAnimaScroll from "./modules/animeScroll.js";
 
@@ -37,6 +37,9 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
+// animação números animais com API Fetch.
+fetchNumbers("../../animationApi.json", ".numeros-grid");
+
 // Dropdown para menus
 initDropdownMenu();
 
@@ -45,9 +48,6 @@ initMenuMobile();
 
 // Horario de funcionamento
 initOperation();
-
-// animação números animais com API Fetch.
-initFetchNumbers();
 
 // API externa Bitcoin.
 initFetchBitcoin();
