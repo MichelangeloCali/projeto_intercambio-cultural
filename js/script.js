@@ -4,10 +4,10 @@ import TabNav from "./modules/tabNav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import fetchNumbers from "./modules/animationApi.js";
+import fetchBitcoin from "./modules/bitcoinApi.js";
 import initDropdownMenu from "./modules/menuDropdown.js";
 import initMenuMobile from "./modules/menuMobile.js";
 import initOperation from "./modules/funcionamento.js";
-import initFetchBitcoin from "./modules/bitcoinApi.js";
 import initAnimaScroll from "./modules/animeScroll.js";
 
 // SCROLL SUAVE
@@ -40,6 +40,9 @@ tooltip.init();
 // animação números animais com API Fetch.
 fetchNumbers("../../animationApi.json", ".numeros-grid");
 
+// API externa Bitcoin.
+fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
+
 // Dropdown para menus
 initDropdownMenu();
 
@@ -48,9 +51,6 @@ initMenuMobile();
 
 // Horario de funcionamento
 initOperation();
-
-// API externa Bitcoin.
-initFetchBitcoin();
 
 // ANIMAÇÃO SCROLL
 initAnimaScroll();
