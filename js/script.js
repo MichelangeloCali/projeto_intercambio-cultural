@@ -38,7 +38,7 @@ const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
 // animação números animais com API Fetch.
-fetchNumbers("../../animationApi.json", ".numeros-grid");
+fetchNumbers("../animationApi.json", ".numeros-grid");
 
 // API externa Bitcoin.
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
