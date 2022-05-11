@@ -5,10 +5,10 @@ import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import fetchNumbers from "./modules/animationApi.js";
 import fetchBitcoin from "./modules/bitcoinApi.js";
+import AnimaScroll from "./modules/animeScroll.js";
 import initDropdownMenu from "./modules/menuDropdown.js";
 import initMenuMobile from "./modules/menuMobile.js";
 import initOperation from "./modules/funcionamento.js";
-import initAnimaScroll from "./modules/animeScroll.js";
 
 // SCROLL SUAVE
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
@@ -43,6 +43,10 @@ fetchNumbers("../../animationApi.json", ".numeros-grid");
 // API externa Bitcoin.
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
+// ANIMAÇÃO SCROLL
+const animaScroll = new AnimaScroll("[data-anime='scroll']");
+animaScroll.init();
+
 // Dropdown para menus
 initDropdownMenu();
 
@@ -51,6 +55,3 @@ initMenuMobile();
 
 // Horario de funcionamento
 initOperation();
-
-// ANIMAÇÃO SCROLL
-initAnimaScroll();
