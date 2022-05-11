@@ -7,7 +7,7 @@ import fetchNumbers from "./modules/animationApi.js";
 import fetchBitcoin from "./modules/bitcoinApi.js";
 import AnimaScroll from "./modules/animeScroll.js";
 import DropdownMenu from "./modules/menuDropdown.js";
-import initMenuMobile from "./modules/menuMobile.js";
+import MenuMobile from "./modules/menuMobile.js";
 import initOperation from "./modules/funcionamento.js";
 
 // SCROLL SUAVE
@@ -52,7 +52,8 @@ const dropDropdownMenu = new DropdownMenu("[data-dropdown]");
 dropDropdownMenu.init();
 
 // Menu mobile
-initMenuMobile();
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
 
 // Horario de funcionamento
 initOperation();
