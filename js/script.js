@@ -8,7 +8,7 @@ import fetchBitcoin from "./modules/bitcoinApi.js";
 import AnimaScroll from "./modules/animeScroll.js";
 import DropdownMenu from "./modules/menuDropdown.js";
 import MenuMobile from "./modules/menuMobile.js";
-import initOperation from "./modules/funcionamento.js";
+import Operation from "./modules/funcionamento.js";
 
 // SCROLL SUAVE
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
@@ -56,4 +56,5 @@ const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
 // Horario de funcionamento
-initOperation();
+const operation = new Operation("[data-semana]", "aberto");
+operation.init();
