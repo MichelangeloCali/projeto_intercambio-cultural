@@ -48,7 +48,7 @@ const animaScroll = new AnimaScroll("[data-anime='scroll']");
 animaScroll.init();
 
 // Dropdown para menus
-const dropDropdownMenu = new DropdownMenu("[data-dropdown]");
+const dropDropdownMenu = new DropdownMenu("[data-dropdown] > a");
 dropDropdownMenu.init();
 
 // Menu mobile

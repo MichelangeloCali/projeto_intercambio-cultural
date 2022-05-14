@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Intercâmbio Cultural | Equipe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+  <!-- script para usuários que não possuem JS habilitados em seu navegador  -->
+  <script>document.documentElement.className += ' js';</script>
+</head>
+
+<body>
+  <div class="grid-container">
+    <nav class="menu" data-menu="suave">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li data-dropdown><a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="./empresa.html">A Empresa</a></li>
+            <li><a href="./equipe.html">Equipe</a></li>
+            <li><a href="./parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a data-modal="open" href="login.html">Login →</a></li>
+      </ul>
+    </nav>
+
+    <section class="grid-section viagens" id="viagens" data-anime="scroll">
+      <h1 class="titulo">A Equipe</h1>
+      <ul class="viagens-lista empresa" data-tab="menu">
+        <li>
+          <img src="./assets/img/equipe.jpg">
+        </li>
+
+      </ul>
+      <div class="viagens-descricao" data-tab="content">
+        <section data-anime="show-right">
+          <h2>Nossa Equipe</h2>
+          <p>A cidade de Nova York compreende 5 distritos situados no encontro do rio Hudson com o Oceano Atlântico. </p>
+          <p>No centro da cidade fica Manhattan, um distrito com alta densidade demográfica que está entre os principais centros comerciais, financeiros e culturais do mundo.</p>
+          <p>Entre seus pontos emblemáticos, destacam-se arranha-céus, como o Empire State Building, e o enorme Central Park.</p>
+          <p>O teatro da Broadway fica em meio às luzes de neon da Times Square.</p>
+          <p>A cidade de Nova York compreende 5 distritos situados no encontro do rio Hudson com o Oceano Atlântico. </p>
+          <p>No centro da cidade fica Manhattan, um distrito com alta densidade demográfica que está entre os principais centros comerciais, financeiros e culturais do mundo.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="grid-section faq" id="faq" data-anime="scroll">
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista" data-anime="accordion">
+        <dt>O intercâmbio pode ser personalizado?</dt>
+        <dd>Vamos te ajudar a desenhar toda estratégia para ampliar sua experiência em seu intercâmbio.Todas as atividades que você deseja realizar, você escolhe e nós planejamos, tudo para que você tenha sempre a melhor experiência de viagem combinada com aprendizado!</dd>
+        <dt>Teremos suporte durante nosso intercâmbio?</dt>
+        <dd>Claro! Nossos clientes terão todo o conforto, comodidade e segurança, por isso temos o melhor suporte para nossos intercambistas.</dd>
+        <dt>Vocês ajudarão na escolha da residência?</dt>
+        <dd>Sim! Não é maravilhoso? Nossos clientes não precisam se preocupar quanto às burocracias de residências, visto e melhores trajetos no dia a dia. O pacote inclui absolutamente tudo.</dd>
+        <dt>Posso parcelar em até quantas vezes? Há desconto à vista?</dt>
+        <dd>Você pode parcelar em até 12x em seu cartão. Caso opte pelo pagamento à vista, poderá ter descontos de até 5% no valor do pacote.</dd>
+      </dl>
+    </section>
+
+    <section class="grid-section contato" id="contato" data-anime="scroll">
+      <h1 class="titulo">Contato</h1>
+      <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento">
+        <img src="./assets/img/mapa.png">
+      </div>
+      <ul class="dados">
+        <li>contato@intercambio.com</li>
+        <li>+55 (41) 9999-9999</li>
+        <li>Rua das Araucárias, nº 41</li>
+        <li>Curitiba - PR</li>
+        <li>Ajude-nos, doe <span class="btc-preco">0</span> Bitcoin</li>
+        <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8h às 18h</li>
+      </ul>
+    </section>
+
+    <footer class="copy">
+      <p>Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button class="close" data-modal="close">X</button>
+      <form action="">
+        <label for="email">E-mail</label>
+        <input type="text" for="email" id="email">
+        <label for="password">Senha</label>
+        <input type="password" for="password" id="password">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
